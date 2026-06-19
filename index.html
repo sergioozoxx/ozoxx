@@ -322,6 +322,18 @@ h3{ font-size:clamp(20px,2.6vw,24px); font-weight:600; }
 .o3-arrow{ color:var(--aqua); flex:0 0 auto; }
 .o3-arrow svg{ width:26px; height:18px; }
 .o3-caption{ margin-top:24px; font-size:13.5px; color:var(--ink-faint); text-align:center; }
+.o3-credential{
+  display:flex; align-items:center; gap:16px;
+  margin-top:22px; padding:18px 20px;
+  background:var(--aqua-soft); border-radius:var(--radius-md);
+}
+.o3-credential-badge{
+  width:48px; height:48px; border-radius:12px; background:var(--teal-deep);
+  display:flex; align-items:center; justify-content:center; flex-shrink:0;
+}
+.o3-credential-badge svg{ width:24px; height:24px; color:#7BE0D4; }
+.o3-credential strong{ display:block; font-size:21px; color:var(--teal-deep); font-family:var(--font-display); font-weight:700; }
+.o3-credential span{ display:block; font-size:12.5px; color:var(--ink-soft); margin-top:3px; line-height:1.5; }
 
 @media (min-width:920px){ .authority-grid{ grid-template-columns:1.05fr 0.95fr; } }
 
@@ -617,6 +629,10 @@ h3{ font-size:clamp(20px,2.6vw,24px); font-weight:600; }
 <symbol id="ic-box" viewBox="0 0 24 24">
   <path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 8 12 4l9 4-9 4-9-4Zm0 0v9l9 4 9-4V8M12 12v9"/>
 </symbol>
+<symbol id="ic-shield" viewBox="0 0 24 24">
+  <path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3Z"/>
+  <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/>
+</symbol>
 <symbol id="ic-flask" viewBox="0 0 24 24">
   <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 3h6M10 3v6.5L5.2 18a1.8 1.8 0 0 0 1.6 2.6h10.4a1.8 1.8 0 0 0 1.6-2.6L14 9.5V3"/>
   <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M5 17l4-3M19 17l-4-3" opacity="0.0"/>
@@ -690,6 +706,7 @@ h3{ font-size:clamp(20px,2.6vw,24px); font-weight:600; }
         <li><svg><use href="#ic-check"/></svg> Descubra qual modelo é ideal para você</li>
       </ul>
       <div class="hero-trust">
+        <div><svg viewBox="0 0 24 24"><use href="#ic-shield"/></svg> 99,9% eficácia (Laudo UNICAMP)</div>
         <div><svg viewBox="0 0 24 24"><use href="#ic-bolt"/></svg> Bivolt 110V / 220V</div>
         <div><svg viewBox="0 0 24 24"><use href="#ic-box"/></svg> Design compacto</div>
         <div><svg viewBox="0 0 24 24"><use href="#ic-gauge"/></svg> Operação simples</div>
@@ -785,6 +802,13 @@ h3{ font-size:clamp(20px,2.6vw,24px); font-weight:600; }
           </div>
         </div>
         <p class="o3-caption">Representação simplificada do ciclo do ozônio durante o uso do equipamento.</p>
+        <div class="o3-credential">
+          <div class="o3-credential-badge"><svg viewBox="0 0 24 24"><use href="#ic-shield"/></svg></div>
+          <div>
+            <strong>99,9% de eficácia virucida</strong>
+            <span>Laudo do Laboratório de Virologia · Instituto de Biologia · UNICAMP — testado contra coronavírus (mesmo gênero do SARS-CoV-2), com 15 a 30 min de exposição ao ozônio gerado pelo equipamento OZOXX.</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -962,7 +986,7 @@ h3{ font-size:clamp(20px,2.6vw,24px); font-weight:600; }
       </div>
       <div class="faq-item">
         <button class="faq-question">O ozônio é seguro para uso doméstico? <svg viewBox="0 0 24 24"><use href="#ic-chevron"/></svg></button>
-        <div class="faq-answer"><div class="faq-answer-inner">Sim. O ozônio pode ser utilizado em ambientes com pessoas presentes, e estudos científicos da <strong>UNICAMP</strong> e da <strong>Universidade Federal do Rio de Janeiro (UFRJ)</strong> comprovam que, nas concentrações geradas pelos equipamentos domésticos, o ozônio não representa risco para quem está no ambiente — incluindo plantas e pets. Pelo contrário: os laudos apontam melhoras e benefícios para a qualidade do ar quando utilizado corretamente.</div></div>
+        <div class="faq-answer"><div class="faq-answer-inner">Sim, quando utilizado conforme as orientações de uso — geralmente com o ambiente vazio durante a aplicação e ventilado antes de ser ocupado novamente. A tecnologia de geração de ozônio OZOXX foi testada pelo Laboratório de Virologia da UNICAMP, que comprovou <strong>99,9% de eficácia virucida</strong> contra coronavírus (mesmo gênero do SARS-CoV-2). Nosso consultor explica o passo a passo de uso seguro para cada tipo de ambiente.</div></div>
       </div>
 
       <div class="faq-item">
